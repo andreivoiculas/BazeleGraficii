@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BazeleGraficii" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/BazeleGraficii" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-lglfw3 -lgdi32 -lopengl32" />
+					<Add directory="libs/glfw-3.3.2.bin.WIN64/include" />
+					<Add directory="libs/glfw-3.3.2.bin.WIN32/include" />
+					<Add directory="libs/glew-2.1.0/include" />
+					<Add directory="D:/CppProj/BazeleGraficii/" />
+					<Add directory="libs/glm/glm" />
+				</Compiler>
+				<Linker>
+					<Add library="libs/glew-2.1.0/lib/Release/x64/glew32s.lib" />
+					<Add library="libs/glew-2.1.0/lib/Release/x64/glew32.lib" />
+					<Add library="libs/glfw-3.3.2.bin.WIN64/lib-mingw-w64/libglfw3.a" />
+					<Add library="libs/glfw-3.3.2.bin.WIN64/lib-mingw-w64/libglfw3dll.a" />
+					<Add library="libs/glfw-3.3.2.bin.WIN32/lib-mingw/libglfw3.a" />
+					<Add library="libs/glfw-3.3.2.bin.WIN32/lib-mingw/libglfw3dll.a" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="libgdi32" />
+					<Add directory="libs/glfw-3.3.2.bin.WIN64/lib-mingw-w64" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/BazeleGraficii" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Shader.h" />
+		<Unit filename="include/stb_image.h" />
+		<Unit filename="shaders/fragment_shader.frag" />
+		<Unit filename="shaders/vertex_shader.vert" />
+		<Unit filename="src/Shader.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
