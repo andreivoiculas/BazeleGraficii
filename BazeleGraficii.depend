@@ -732,3 +732,8 @@
 
 1607613201 d:\cppproj\bazelegraficii\libs\glm\glm\simd\integer.h
 
+1607372885 d:\cppproj\bazelegraficii\include\shader.h
+	<GL/glew.h>
+	<GL/gl.h>
+	<string>
+
