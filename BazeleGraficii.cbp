@@ -12,12 +12,13 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++17" />
 					<Add option="-g" />
 					<Add option="-lglfw3 -lgdi32 -lopengl32" />
 					<Add directory="libs/glfw-3.3.2.bin.WIN64/include" />
 					<Add directory="libs/glfw-3.3.2.bin.WIN32/include" />
 					<Add directory="libs/glew-2.1.0/include" />
-					<Add directory="D:/CppProj/BazeleGraficii/" />
+					<Add directory="." />
 					<Add directory="libs/glm/glm" />
 				</Compiler>
 				<Linker>
